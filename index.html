@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniverSage - Your College Decision Guide</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for Social Icons -->
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+      background: radial-gradient(circle at bottom, #0d1b2a, #1b263b, #415a77, #0d1b2a);
+    }
+
+    .stars {
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      position: absolute;
+      z-index: 1;
+    }
+
+    /* Sticky Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #1b263b;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .navbar a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: all 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #005780;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 60px); /* Adjust for navbar height */
+      z-index: 2;
+      position: relative;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px #f4f4f4, 0 0 30px #00d4ff;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ccd6f6;
+    }
+
+    .cta-btn {
+      margin-top: 20px;
+      padding: 10px 30px;
+      background-color: #00d4ff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #0d1b2a;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px #00d4ff, 0 0 30px #00a3d5;
+    }
+
+    .cta-btn:hover {
+      background-color: #005780;
+      box-shadow: 0 0 30px #005780, 0 0 50px #00d4ff;
+    }
+
+    .planet {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, #ff9f00, #ff6f00);
+      border-radius: 50%;
+      top: 20%;
+      right: 10%;
+      box-shadow: 0 0 30px #ff9f00, 0 0 50px #ff6f00;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #a3b8cc;
+    }
+
+    footer a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social Media Icons */
+    .social-icons a {
+      color: #ccd6f6;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00d4ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <!-- Sticky Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Connect Chatbot</a>
+    <a href="#">More</a>
+  </div>
+
+  <div class="main-container">
+    <h1>Welcome to UniverSage</h1>
+    <p>Your ultimate guide to making informed college decisions.</p>
+    <button class="cta-btn">Start Your Journey</button>
+  </div>
+  
+  <div class="planet"></div>
+
+  <!-- Footer with Social Media Icons -->
+  <footer>
+    Made with ❤ to empower your future. Learn more at <a href="#">UniverSage.com</a>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Load FontAwesome Script for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
